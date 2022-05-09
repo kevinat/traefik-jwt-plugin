@@ -1,4 +1,4 @@
-displayName: JWT Access Policy
+displayName: JWT Access Policy Ex
 type: middleware
 
 import: github.com/kevinat/traefik-jwt-plugin
