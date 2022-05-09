@@ -395,6 +395,8 @@ func (jwtPlugin *JwtPlugin) ExtractToken(request *http.Request) (*JWT, error) {
 	if err != nil {
 		return nil, err
 	}
+	// 2022-05-09 by kevinat, we need clean this header
+	request.Header.Set("Authorization", "")
 	return &jwtToken, nil
 }
 
